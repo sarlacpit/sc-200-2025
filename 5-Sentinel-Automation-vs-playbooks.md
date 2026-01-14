@@ -54,3 +54,22 @@ Question: Do you need to build a Logic App Playbook for this, or can you do it p
 --- 
 You only need an Automation Rule.
 Changing the owner, severity, status, or tags are internal operations within the Sentinel database. Automation Rules are optimized for this—they are faster and cheaper than spinning up a Logic App.
+
+
+
+---
+
+## Mini-Review: Phase 2
+Defender Remediation: "Isolate Device" is your panic button. "Live Response" works even when isolated.
+
+Sentinel Remediation:
+
+Automation Rules: Manage the incident (Tag, Assign, Close).
+
+Playbooks (Logic Apps): Talk to the outside world (Firewalls, Service Desk, AD).
+
+Permissions: Playbooks need their own identity (Managed Identity) with permissions to perform the action.
+
+---
+
+
